@@ -19,7 +19,7 @@ exports.signup = function (req, res, next) {
   var email = validator.trim(req.body.email).toLowerCase();
   var pass = validator.trim(req.body.pass);
   var rePass = validator.trim(req.body.re_pass);
-  email = loginname + '@irdeto.com';
+  // email = loginname + '@irdeto.com';
 
   var ep = new eventproxy();
   ep.fail(next);
